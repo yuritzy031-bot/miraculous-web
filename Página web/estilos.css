@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+/* OCULTAR SECCIONES */
+section{
+    display: none;
+    padding: 40px;
+}
+
+/* MOSTRAR INICIO */
+body:not(:has(section:target)) #Inicio{
+    display: block;
+}
+
+/* MOSTRAR SECCIÓN SELECCIONADA */
+section:target{
+    display: block;
+}
+
+/* ENCABEZADO */
+header{
+    background: #1a3c5e;
+    color: white;
+    padding: 20px;
+}
+
+/* MENÚ */
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    background: #4077b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* CAJAS */
+.bienvenida,
+.motos-destacadas,
+.servicios{
+    background: white;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* GALERÍA */
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.moto{
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+}
+
+/* SERVICIOS */
+.lista-servicios{
+    list-style: none;
+    padding: 0;
+}
+
+.lista-servicios li{
+    background: #e0e0e0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+footer{
+    background: #1a3c5e;
+    color: white;
+    padding: 20px;
+}
